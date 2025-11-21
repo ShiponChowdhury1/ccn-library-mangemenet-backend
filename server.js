@@ -8,7 +8,7 @@ const app = express();
 
 // CORS Configuration (Allow requests from both local and production frontend)
 app.use(cors({
-  origin: ['https://ccn-university-library-client.vercel.app'],
+  origin: ['http://localhost:5174', 'https://ccn-university-library.vercel.app'],
   credentials: true
 }));
 
