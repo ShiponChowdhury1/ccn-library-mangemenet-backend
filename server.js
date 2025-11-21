@@ -6,9 +6,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
 
-// CORS Configuration (Allow requests only from your frontend)
+// CORS Configuration (Allow requests from both local and production frontend)
 app.use(cors({
-  origin: 'http://localhost:5173' // Adjust this as needed for production
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://ccn-university-library.vercel.app'],
+  credentials: true
 }));
 
 app.use(express.json());
