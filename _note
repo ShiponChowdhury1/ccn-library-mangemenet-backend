@@ -7,3 +7,11 @@ user.model.js
 
 routes / auth.route.js
 book.routes.s
+
+
+
+
+
+PORT=5000
+MONGO_URL=mongodb+srv://ccn-university:cYhRMWhWfIOyYDf7@cluster0.uoyoyb2.mongodb.net/ccn-university?appName=Cluster0
+JWT_SECRET=ccn_library_secret_key_2025_shipon_chowdhury_secure_token_authentication
